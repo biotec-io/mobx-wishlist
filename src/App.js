@@ -1,18 +1,27 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import 'material-components-web/dist/material-components-web.css';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
+      <div>
+        <header class="mdc-toolbar">
+          <div class="mdc-toolbar__row">
+            <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
+              <span class="mdc-toolbar__title">Welcome to WishList</span>
+            </section>
+          </div>
         </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+
+        <div className="mdc-layout-grid">
+          <div className="mdc-layout-grid__inner">
+            <div className="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
+              <h2 className="mdc-tipography--title">
+                React and Mobx wishlist application with material-design styling
+              </h2>
+            </div>
+          </div>
+        </div>
       </div>
     );
   }
